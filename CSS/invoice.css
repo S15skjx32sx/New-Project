@@ -1,0 +1,110 @@
+/* === YOUR BASE STYLES === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background: #f9f9f9;
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+}
+
+.invoice-block {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #999;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+#summaryBlock p {
+  margin: 5px 0;
+}
+
+/* === BUTTON STYLES === */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.button-row button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-row button:hover {
+  background-color: #0056b3;
+}
+
+/* === ADDED LAYOUT FOR CUSTOM INVOICE === */
+.invoice-box {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.invoice-info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.client-details {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.invoice-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.invoice-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.invoice-actions button:hover {
+  background: #0056b3;
+}
