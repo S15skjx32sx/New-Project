@@ -23,20 +23,13 @@ window.onload = function () {
 
 // Single Invoice
 function generateSingleInvoice(data) {
-  const client = {
-    name: "Suryansh Kumar",
-    address: "Varanasi",
-    contact: "+91-9956678452"
-  };
+  
   const invNo = "INV" + Date.now();
   const date = new Date().toISOString().slice(0, 10);
 
   document.getElementById('invNo').textContent = `Invoice No: ${invNo}`;
   document.getElementById('invDate').textContent = `Date: ${date}`;
-  document.getElementById('clientName').textContent = `Name: ${client.name}`;
-  document.getElementById('clientAddress').textContent = `Address: ${client.address}`;
-  document.getElementById('clientContact').textContent = `Contact: ${client.contact}`;
-
+  
   const tbody = document.querySelector('#itemsTable tbody');
   let totalSum = 0;
 
